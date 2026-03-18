@@ -1,0 +1,65 @@
+.spec-section{
+width:100%;
+padding:45px 0;
+background:#f5f5f5;
+overflow:hidden;
+}
+
+/* slide width */
+.spec-slide{
+width:75%;
+}
+
+/* card */
+.spec-card{
+position:relative;
+overflow:hidden;
+border-radius:6px;
+}
+
+/* image */
+.spec-card img{
+width:100%;
+height:auto;
+display:block;
+object-fit:cover;
+}
+
+/* zoom only ONCE during 3.5 sec */
+.swiper-slide-active .spec-card img{
+animation: zoomEffect 3.5s ease-in-out forwards;
+}
+
+@keyframes zoomEffect{
+
+0%{
+transform:scale(1);
+}
+
+50%{
+transform:scale(1.08);
+}
+
+100%{
+transform:scale(1);
+}
+
+}
+
+/* overlay */
+.spec-content{
+position:absolute;
+bottom:0;
+left:0;
+right:0;
+padding:25px;
+background:linear-gradient(to top, rgba(0,0,0,0.7), transparent);
+color:white;
+text-align:center;
+}
+
+/* arrows */
+.swiper-button-next,
+.swiper-button-prev{
+color:#555;
+}

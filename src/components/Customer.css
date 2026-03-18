@@ -1,0 +1,41 @@
+.customer-section{
+padding:100px 0;
+}
+
+.customer-image img{
+width:100%;
+height:auto;
+}
+
+.customer-content{
+    text-align: left;
+padding-left:40px;
+}
+
+.customer-content h2{
+font-size:40px;
+font-weight:700;
+margin-bottom:20px;
+}
+
+.customer-content p{
+font-size:16px;
+line-height:1.7;
+color:#555;
+}
+
+/* Mobile */
+
+@media(max-width:768px){
+
+.customer-section{
+padding:60px 0;
+}
+
+.customer-content{
+padding-left:0;
+margin-top:30px;
+text-align:left;
+}
+
+}

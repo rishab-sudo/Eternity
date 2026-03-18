@@ -1,0 +1,127 @@
+.productSpec{
+max-width:1200px;
+margin:auto;
+padding:50px 20px;
+}
+
+/* heading + dropdown */
+
+.productSpecTop{
+display:flex;
+align-items:center;
+justify-content:center;
+position:relative;
+margin-bottom:40px;
+}
+
+.productSpecHeading{
+font-size:32px;
+text-align:center;
+}
+
+.variantDropdown{
+position:absolute;
+right:0;
+padding:10px 25px;
+border:2px solid #000;
+background:white;
+cursor:pointer;
+}
+
+
+/* image */
+
+.productImage{
+position:relative;
+margin-bottom:50px;
+}
+
+.productImage img{
+width:100%;
+}
+
+.imageInfo{
+position:absolute;
+bottom:30px;
+left:30px;
+color:white;
+}
+
+.imageInfo h3{
+font-size:28px;
+margin-bottom:5px;
+}
+
+.imageInfo p{
+font-size:18px;
+}
+
+
+/* accordion */
+
+.specItem{
+border-bottom:1px solid #ddd;
+}
+
+/* title */
+
+.specTitle{
+padding:16px;
+font-weight:600;
+cursor:pointer;
+background:#fafafa;
+display:flex;
+align-items:center;
+justify-content:space-between;
+}
+
+/* arrow */
+
+.arrow{
+width:8px;
+height:8px;
+border-right:2px solid #000;
+border-bottom:2px solid #000;
+transform:rotate(45deg);
+transition:transform 0.3s ease;
+}
+
+/* rotate arrow when open */
+
+.specItem.active .arrow{
+transform:rotate(-135deg);
+}
+
+/* content animation */
+
+.specContent{
+max-height:0;
+overflow:hidden;
+transition:max-height 0.4s ease;
+}
+
+.specContent.show{
+max-height:500px;
+}
+
+/* table */
+
+.specTable{
+width:100%;
+border-collapse:collapse;
+}
+
+.specTable tr{
+border-bottom:1px solid #eee;
+text-align: left;
+}
+
+.specLabel{
+padding:14px;
+font-weight:500;
+}
+
+.specValue{
+padding:14px;
+font-weight:600;
+}

@@ -1,0 +1,30 @@
+.homeabout{
+padding:45px 0;
+}
+
+.homeabout-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    text-align: left !important;
+}
+.homeabout-content h2{
+font-size:36px;
+font-weight:700;
+margin-bottom:20px;
+}
+
+.homeabout-content p{
+font-size:16px;
+line-height:1.7;
+margin-bottom:15px;
+}
+
+.homeabout-image{
+text-align:right;
+}
+
+.homeabout-image img{
+max-width:100%;
+}

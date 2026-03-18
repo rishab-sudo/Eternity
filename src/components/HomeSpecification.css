@@ -1,0 +1,71 @@
+.home-spec{
+  padding:45px 0;
+  overflow:hidden;
+}
+
+.spec-container{
+padding: 45px 0px;
+height: 100%;
+/* background-color: bisque; */
+}
+
+.spec-wrapper{
+  position:relative;
+  width:100%;
+  min-height:650px;
+  overflow:hidden;
+}
+
+/* BLACK PANEL */
+
+.spec-text{
+    text-align: left;
+  background:black;
+  color:white;
+  width:100%;
+  padding:125px;
+  height: 100%;
+  transition:width 1s ease;
+}
+
+.spec-text.show{
+  width:45%;
+}
+
+/* IMAGE */
+
+.spec-img{
+  position:absolute;
+  top:0;
+  right:0;
+  width:55%;
+  margin: auto;
+
+  transform:translateX(100%);
+  transition:transform 1s ease;
+}
+
+.spec-img.show{
+  transform:translateX(0);
+}
+
+.spec-img img{
+  width:100%;
+  height:100%;
+  display:block;
+ 
+}
+
+/* specs */
+.spec-box{
+  display:flex;
+  gap:40px;
+}
+
+.tagline{
+  margin-bottom:20px;
+}
+
+.price{
+  margin-bottom:30px;
+}
