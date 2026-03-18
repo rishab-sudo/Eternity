@@ -38,9 +38,9 @@ const Navbar = () => {
     setMenuOpen(!menuOpen);
   };
 
-  const toggleCars = () => {
-    setCarDropdown(!carDropdown);
-  };
+  // const toggleCars = () => {
+  //   setCarDropdown(!carDropdown);
+  // };
 
   return (
     <>
