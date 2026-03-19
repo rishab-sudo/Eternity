@@ -24,10 +24,10 @@ const Footer = () => {
               </p>
 
               <div className="social-icons">
-                <a href="#"><FaFacebookF /></a>
-                <a href="#"><FaInstagram /></a>
-                <a href="#"><FaLinkedinIn /></a>
-                <a href="#"><FaYoutube /></a>
+                <a href="https://www.facebook.com/profile.php?id=61588345141535"><FaFacebookF /></a>
+                <a href="https://www.instagram.com/megagreencity/"><FaInstagram /></a>
+                {/* <a href="#"><FaLinkedinIn /></a>
+                <a href="#"><FaYoutube /></a> */}
               </div>
             </Col>
 

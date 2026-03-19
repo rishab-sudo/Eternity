@@ -4,7 +4,7 @@ import "./ProductPageBanner.css";
 
 const ProductPageBanner = ({ image, alt }) => {
   return (
-    <Container fluid className="product-banner">
+    <Container fluid className="product-banner g-0">
       <img
         src={image}
         alt={alt || "Product Banner"}
