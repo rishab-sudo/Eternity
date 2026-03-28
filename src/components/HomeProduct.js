@@ -12,12 +12,12 @@ const HomeProduct = () => {
     { img: require("../assets/products/vf6-desat-silver.png") },
     { img: require("../assets/products/vf6-crimson-red.png") },
 
-    { img: require("../assets/products/vf7-zenith-grey.png") },
-    { img: require("../assets/products/vf7-urban-mint.png") },
-    { img: require("../assets/products/vf7-jet-black.png") },
-    { img: require("../assets/products/vf7-infinity-blanc.png") },
-    { img: require("../assets/products/vf7-desat-silver.png") },
-    { img: require("../assets/products/vf7-crimson-red.png") }
+    { img: require("../assets/products/vf7-grey.png") },
+    { img: require("../assets/products/vf7-grey.png") },
+    { img: require("../assets/products/vf7-black.png") },
+    { img: require("../assets/products/vf7-infinity.png") },
+    { img: require("../assets/products/vf7-silver.png") },
+    { img: require("../assets/products/vf7-red.png") }
   ];
 
   const colors = [
@@ -74,8 +74,8 @@ const HomeProduct = () => {
 
         {/* Color Buttons */}
 
+<p>Choose premium</p>
         <div className="color-selector">
-
           {colors.map((color, i) => (
 
             <div

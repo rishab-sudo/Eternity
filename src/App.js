@@ -6,6 +6,7 @@ import  Navbar  from "./components/Navbar";
 import Home from "./pages/Home";
 import VF6 from "./pages/VF6"
 import VF7 from "./pages/VF7"
+import Contact from "./pages/Contact";
 import './App.css';
 import Footer from "./components/Footer";
 
@@ -22,6 +23,7 @@ function App() {
        <Route path="/home" element={<Home />} />
         <Route path="/vf6" element={<VF6 />} />
          <Route path="/vf7" element={<VF7 />} />
+         <Route path="/contact" element={<Contact />} />
      </Routes>
      <Footer/>
     </div>

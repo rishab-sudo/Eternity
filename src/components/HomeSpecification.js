@@ -22,7 +22,7 @@ const HomeSpecification = ({
 
           setTimeout(() => {
             setVisible(true);
-          }, 1000); // 1 second delay
+          }, 800); // 1 second delay
 
         }
       },

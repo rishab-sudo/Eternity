@@ -1,41 +1,76 @@
-.customer-section{
-padding:100px 0;
+.customer-section {
+  padding: 80px 40px; /* ✅ side padding added */
+  background: #f5f5f5;
+  text-align: center;
+  overflow: hidden;
 }
 
-.customer-image img{
-width:100%;
-height:auto;
+.customer-title {
+  font-size: 38px;
+  font-weight: 800;
+  margin-bottom: 60px;
 }
 
-.customer-content{
-    text-align: left;
-padding-left:40px;
+/* ✅ VERY IMPORTANT (fix cut cards) */
+.swiper {
+  padding: 40px 10px 60px; 
 }
 
-.customer-content h2{
-font-size:40px;
-font-weight:700;
-margin-bottom:20px;
+/* CARD */
+.customer-card {
+  background: #fff;
+  padding: 60px 20px 30px;
+  border-radius: 12px;
+  position: relative;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+  transition: 0.3s;
+  height: 100%;
 }
 
-.customer-content p{
-font-size:16px;
-line-height:1.7;
-color:#555;
+.customer-card:hover {
+  transform: translateY(-8px);
 }
 
-/* Mobile */
-
-@media(max-width:768px){
-
-.customer-section{
-padding:60px 0;
+/* ✅ IMAGE HALF OUTSIDE */
+.image-wrapper {
+  position: absolute;
+  top: -35px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
-.customer-content{
-padding-left:0;
-margin-top:30px;
-text-align:left;
+.image-wrapper img {
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  border: 4px solid #fff;
 }
 
+/* TEXT */
+.customer-card h4 {
+  margin-top: 45px;
+  margin-bottom: 10px;
+}
+
+.customer-card p {
+  font-size: 14px;
+  color: #666;
+  padding: 0 5px;
+}
+
+.stars {
+  margin-top: 10px;
+  color: orange;
+}
+
+/* 📱 MOBILE FIX */
+@media (max-width: 768px) {
+  .customer-section {
+    padding: 60px 20px;
+  }
+
+  .swiper {
+    padding: 40px 5px;
+  }
 }

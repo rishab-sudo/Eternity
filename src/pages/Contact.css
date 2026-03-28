@@ -1,0 +1,147 @@
+.contact-us {
+  position: relative;
+  margin-top: 100vh;  
+  padding: 60px 0;
+  background: #f9f9f9;
+
+  border-radius: 20px 20px 0 0;
+  box-shadow: 0 -20px 40px rgba(0,0,0,0.15);
+  z-index: 2;
+}
+html {
+  scroll-behavior: smooth;
+}
+/* HERO SECTION */
+.contact-hero {
+  position: fixed;   
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  background: url("../assets/vf6_Banner.jpg") center/cover no-repeat;
+  z-index: -1;  
+}
+
+/* BLACK OVERLAY */
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+/* LINE WRAPPER (CENTER BOTTOM) */
+.scroll-line-wrapper {
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 100px;
+  width: 2px;
+  overflow: hidden;
+}
+
+/* ANIMATED LINE */
+.scroll-line {
+  width: 2px;
+  height: 100px;
+  background: #fff;
+  animation: lineMove 1.5s ease-in-out infinite;
+}
+
+/* LINE ANIMATION */
+@keyframes lineMove {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+}
+/* CONTACT + MAP */
+.contact-us-main-row {
+  margin-bottom: 60px;
+  align-items: center;
+  text-align: left;
+}
+
+/* INFO BOX */
+
+.contact-info-box {
+  background: #fff;
+  padding: 40px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+  text-align: left;
+}
+
+.contact-info-box h4 {
+  margin-bottom: 30px;
+  font-weight: 600;
+  color: #3F412B;
+}
+
+/* CONTACT ITEM */
+
+.contact-item {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+.contact-item svg {
+  font-size: 20px;
+  color: #3F412B;
+  margin-top: 4px;
+}
+
+.contact-label {
+  font-size: 14px;
+  color: #3F412B;
+  margin-bottom: 2px;
+}
+
+.contact-text {
+  font-size: 16px;
+  font-weight: 600;
+  color: #0e2a34;
+}
+
+/* SOCIAL */
+
+.contact-social {
+  margin-top: 25px;
+}
+
+.contact-social a {
+  display: inline-flex;
+  width: 40px;
+  height: 40px;
+  background: #3F412B;
+  color: #fff;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.contact-social a:hover {
+  background: #2b2d1c;
+}
+
+/* MAP */
+
+.contact-us-map {
+  width: 100%;
+  overflow: hidden;
+}
+
+/* FORM */
+
+.contact-us-form-wrapper {
+  margin-top: 40px;
+}

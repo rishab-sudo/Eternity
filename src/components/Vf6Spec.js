@@ -4,7 +4,7 @@ import "./Vf6Spec.css";
 const Vf6Spec = () => {
 
 
-  const variants = {
+const variants = {
   earth: {
     name: "VF6 Earth",
     price: "₹25,00,000",
@@ -44,10 +44,195 @@ const Vf6Spec = () => {
           ["Ground clearance - No Load (mm)", "190"],
           ["Boot space (L)", "423"]
         ]
+      },
+
+      weight: {
+        title: "Weight",
+        rows: [
+          ["Curb weight (kg)", "1962"]
+        ]
+      },
+
+      brakes: {
+        title: "Brakes",
+        rows: [
+          ["Front and Rear", "Disc"],
+          ["Electronic Parking Brake", "YES"],
+          ["Auto Hold", "YES"]
+        ]
+      },
+
+      suspension: {
+        title: "Suspension",
+        rows: [
+          ["Front Suspension", "MacPherson independent"],
+          ["Rear Suspension", "Control blade independent"]
+        ]
+      },
+
+      smart: {
+        title: "Smart Drive Features",
+        rows: [
+          ["Regeneration brake modes", "Off, Low, Medium, High"],
+          ["Selectable driving modes", "Eco / Normal / Sport"]
+        ]
       }
 
     }
+  },
+
+wind: {
+  name: "VF6 Wind",
+  price: "₹27,00,000",
+  image: require("../assets/vf6_Banner.jpg"),
+
+  specs: {
+
+    drivetrain: {
+      title: "Electric Drivetrain",
+      rows: [
+        ["Max. power (kW)", "150"],
+        ["Max. torque (Nm)", "310"],
+        ["Driveline", "FWD"],
+        ["Range (km)", "463"],
+        ["Acceleration 0–100 km/h (s)", "8.5"]
+      ]
+    },
+
+    battery: {
+      title: "Battery and Charging",
+      rows: [
+        ["Usable Battery Capacity", "59.6 kWh"],
+        ["Charge port", "CCS2"],
+        ["AC Charging", "Up to 7.2 kW"],
+        ["DC Charging", "100 kW"],
+        ["Fast Charging (minutes)", "25 (10% to 70%)"]
+      ]
+    },
+
+    dimensions: {
+      title: "Dimensions",
+      rows: [
+        ["Length (mm)", "4241"],
+        ["Width (mm)", "1834"],
+        ["Height (mm)", "1615"],
+        ["Wheel base (mm)", "2730"],
+        ["Ground clearance - No Load (mm)", "190"],
+        ["Boot space (L)", "423"]
+      ]
+    },
+
+    weight: {
+      title: "Weight",
+      rows: [
+        ["Curb weight (kg)", "2028"]
+      ]
+    },
+
+    brakes: {
+      title: "Brakes",
+      rows: [
+        ["Front and Rear", "Disc"],
+        ["Electronic Parking Brake", "YES"],
+        ["Auto Hold", "YES"]
+      ]
+    },
+
+    suspension: {
+      title: "Suspension",
+      rows: [
+        ["Front Suspension", "MacPherson independent"],
+        ["Rear Suspension", "Control blade independent"]
+      ]
+    },
+
+    smart: {
+      title: "Smart Drive Features",
+      rows: [
+        ["Regeneration brake modes", "Off, Low, Medium, High"],
+        ["Selectable driving modes", "Eco/Normal/Sport"]
+      ]
+    }
+
   }
+},
+
+infinity: {
+  name: "VF6 Wind Infinity",
+  price: "₹29,00,000",
+  image: require("../assets/vf6_Banner.jpg"),
+
+  specs: {
+
+    drivetrain: {
+      title: "Electric Drivetrain",
+      rows: [
+        ["Max. power (kW)", "150"],
+        ["Max. torque (Nm)", "310"],
+        ["Driveline", "FWD"],
+        ["Range (km)", "463"],
+        ["Acceleration 0–100 km/h (s)", "8.5"]
+      ]
+    },
+
+    battery: {
+      title: "Battery and Charging",
+      rows: [
+        ["Usable Battery Capacity", "59.6 kWh"],
+        ["Charge port", "CCS2"],
+        ["AC Charging", "Up to 7.2 kW"],
+        ["DC Charging", "100 kW"],
+        ["Fast Charging (minutes)", "25 (10% to 70%)"]
+      ]
+    },
+
+    dimensions: {
+      title: "Dimensions",
+      rows: [
+        ["Length (mm)", "4241"],
+        ["Width (mm)", "1834"],
+        ["Height (mm)", "1615"],
+        ["Wheel base (mm)", "2730"],
+        ["Ground clearance - No Load (mm)", "190"],
+        ["Boot space (L)", "423"]
+      ]
+    },
+
+    weight: {
+      title: "Weight",
+      rows: [
+        ["Curb weight (kg)", "2028"]
+      ]
+    },
+
+    brakes: {
+      title: "Brakes",
+      rows: [
+        ["Front and Rear", "Disc"],
+        ["Electronic Parking Brake", "YES"],
+        ["Auto Hold", "YES"]
+      ]
+    },
+
+    suspension: {
+      title: "Suspension",
+      rows: [
+        ["Front Suspension", "MacPherson independent"],
+        ["Rear Suspension", "Control blade independent"]
+      ]
+    },
+
+    smart: {
+      title: "Smart Drive Features",
+      rows: [
+        ["Regeneration brake modes", "Off, Low, Medium, High"],
+        ["Selectable driving modes", "Eco/Normal/Sport"]
+      ]
+    }
+
+  }
+}
+
 };
   const [variant, setVariant] = useState("earth");
   const [open, setOpen] = useState(null);
@@ -69,18 +254,20 @@ const Vf6Spec = () => {
         <h2 className="productSpecHeading">
           VF6 Specifications
         </h2>
-
-        <select
-          className="variantDropdown"
-          value={variant}
-          onChange={(e)=> {
-            setVariant(e.target.value);
-            setOpen(null);
-          }}
-        >
-          <option value="earth">VF6 Earth</option>
-          <option value="wind">VF6 Wind</option>
-        </select>
+<div className="variantDropdownWrapper">
+  <select
+    className="variantDropdown"
+    value={variant}
+    onChange={(e)=> {
+      setVariant(e.target.value);
+      setOpen(null);
+    }}
+  >
+    <option value="earth">VF6 Earth</option>
+    <option value="wind">VF6 Wind</option>
+    <option value="infinity">VF6 Wind Infinity</option>
+  </select>
+</div>
 
       </div>
 

@@ -34,7 +34,7 @@ const HomeAbout = () => {
             <Col lg={6} md={6}>
               <div className="homeabout-image">
                 <img
-                  src="/images/about-car.png"
+                  src= {require("../assets/et-homeAbout.png")}
                   alt="Premium modern vehicle design"
                   className="img-fluid"
                 />

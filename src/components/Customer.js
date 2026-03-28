@@ -1,37 +1,78 @@
 import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
 import "./Customer.css";
+
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay } from "swiper/modules";
+import "swiper/css";
+
+import { motion } from "framer-motion";
+
+import user1 from "../assets/user11.jpg";
+import user2 from "../assets/user11.jpg";
+import user3 from "../assets/user11.jpg";
+import user4 from "../assets/user11.jpg";
+import user5 from "../assets/user11.jpg";
+import user6 from "../assets/user11.jpg";
+
+const customers = [
+  { name: "Sophia Garcia", text: "Excellent experience!", img: user1 },
+  { name: "Isabella Lee", text: "Smooth process.", img: user2 },
+  { name: "Ethan Patel", text: "Loved the service.", img: user3 },
+  { name: "Samuel Brown", text: "Very professional.", img: user4 },
+  { name: "Daniel Smith", text: "Highly recommended.", img: user5 },
+  { name: "Olivia Johnson", text: "Amazing support.", img: user6 },
+];
 
 const Customer = () => {
   return (
     <section className="customer-section">
-      <Container fluid className="g-0">
-        <Container >
-          <Row className="align-items-center">
 
-            {/* Image Left */}
-            <Col lg={6} md={6}>
-              <div className="customer-image">
-                <img src= {require("../assets/specification/231023_vf-6_deep-ocean_exterior_mg_7106-1.jpg")} alt="customer" />
+      {/* 🔥 Heading Animation */}
+      <motion.h2
+        className="customer-title"
+        initial={{ x: -150, opacity: 0 }}
+        whileInView={{ x: 0, opacity: 1 }}
+        transition={{ duration: 0.8 }}
+      >
+        WHAT ARE OUR CLIENTS SAYING?
+      </motion.h2>
+
+      <Swiper
+        modules={[Autoplay]}
+        spaceBetween={30}
+        slidesPerView={4}
+        speed={600} // 👉 smooth slide speed
+        autoplay={{
+          delay: 1500, // 👉 STOP time (0.5–1s feel)
+          disableOnInteraction: false,
+        }}
+        loop={true}
+        breakpoints={{
+          0: { slidesPerView: 1 },
+          576: { slidesPerView: 1 },
+          768: { slidesPerView: 2 },
+          992: { slidesPerView: 3 },
+          1200: { slidesPerView: 4 },
+        }}
+      >
+        {customers.map((item, index) => (
+          <SwiperSlide key={index}>
+            <div
+              className="customer-card"
+              
+            >
+              <div className="image-wrapper">
+                <img src={item.img} alt={item.name} />
               </div>
-            </Col>
 
-            {/* Text Right */}
-            <Col lg={6} md={6}>
-              <div className="customer-content">
-                <h2>Built For Every Journey</h2>
-                <p>
-                  Experience the perfect balance of innovation, comfort,
-                  and performance. Designed with cutting-edge technology
-                  and premium features to deliver an exceptional driving
-                  experience for every journey.
-                </p>
-              </div>
-            </Col>
+              <h4>{item.name}</h4>
+              <p>{item.text}</p>
+              <div className="stars">★★★★★</div>
+            </div>
+          </SwiperSlide>
+        ))}
+      </Swiper>
 
-          </Row>
-        </Container>
-      </Container>
     </section>
   );
 };

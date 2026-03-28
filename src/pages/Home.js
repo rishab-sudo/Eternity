@@ -5,6 +5,7 @@ import HomeProduct from '../components/HomeProduct'
 
 import OverView from '../components/OverView'
 import Customer from '../components/Customer'
+import TestDrive from "../components/TestDrive"
 
 
 const Home = () => {
@@ -42,7 +43,7 @@ const Home = () => {
       data={overviewData}
     />
        <Customer/>
-    
+    <TestDrive/>
     </div>
   )
 }

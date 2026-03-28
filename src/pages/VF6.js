@@ -59,9 +59,12 @@ const VF6 = () => {
 
 return (
     <>
-   <ProductPageBanner
-  image={require("../assets/vf6_Banner.jpg")}
-  alt="VF6 Electric Vehicle"
+<ProductPageBanner
+  images={[
+    { src: require("../assets/banner/vf7-banner1.png"), alt: "Banner 1" },
+   { src: require("../assets/banner/vf7-banner2.png"), alt: "Banner 2" },
+     { src: require("../assets/banner/vf7-banner3.png"), alt: "Banner 3" },
+  ]}
 />
 <HomeSpecification
 reverse
@@ -71,7 +74,7 @@ price="₹ 18,50,000"
 battery="59.6kWh"
 wheel="45cm"
 adas="Level 2"
-image= {require("../assets/vf6_intro.jpg")}
+image= {require("../assets/vf6-intro.png")}
 />
 
  <OverView

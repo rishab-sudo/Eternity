@@ -1,70 +1,104 @@
-.footer{
-  background:#111;
-  color:#fff;
-  padding:45px 0;
+.footer {
+  background: #111;
+  color: #fff;
+  padding: 45px 0;
+}
+
+/* Column center */
+.footer-col {
+  display: flex;
+  justify-content: center !important; 
+ 
+}
+
+/* Inner content box */
+.footer-inner {
+  width: 100%;
+  max-width: 350px;  /* 🔥 controls alignment */
   text-align: left;
 }
 
-.footer-logo{
-  width:150px;
-  margin-bottom:15px;
+/* Logo */
+.footer-logo {
+  width: 150px;
+  margin-bottom: 15px;
 }
 
-.footer-desc{
-  font-size:14px;
-  line-height:1.6;
+/* Tagline */
+.footer-tagline {
+  font-weight: 600;
+  margin-bottom: 10px;
 }
 
-.footer-heading{
-  margin-bottom:20px;
-  font-weight:600;
+/* Description */
+.footer-desc {
+  font-size: 14px;
+  line-height: 1.6;
 }
 
-.footer-links{
-  list-style:none;
-  padding:0;
+/* Heading */
+.footer-heading {
+  margin-bottom: 20px;
+  font-weight: 600;
 }
 
-.footer-links li{
-  margin-bottom:10px;
+/* Links */
+.footer-links {
+  list-style: none;
+  padding: 0;
 }
 
-.footer-links a{
-  text-decoration:none;
-  color:#ccc;
+.footer-links li {
+  margin-bottom: 10px;
 }
 
-.footer-links a:hover{
-  color:#fff;
+.footer-links a {
+  text-decoration: none;
+  color: #fff;
 }
 
-.footer-address{
-  font-size:14px;
-  line-height:1.7;
+.footer-links a:hover {
+  color: #ccc;
 }
 
-.social-icons{
-  margin-top:15px;
+/* Address */
+.footer-address {
+  font-size: 14px;
+  line-height: 1.7;
 }
 
-.social-icons a{
-  color:#fff;
-  margin-right:12px;
-  font-size:18px;
+/* Social */
+.social-icons {
+  margin-top: 15px;
 }
 
-.brochure-btn{
-  margin-top:15px;
-  padding:10px 18px;
-  border:none;
-  background:#0d6efd;
-  color:#fff;
-  border-radius:4px;
+.social-icons a {
+  color: #fff;
+  margin-right: 12px;
+  font-size: 18px;
 }
 
-/* Mobile */
-@media (max-width:768px){
-  .footer{
-    text-align:left;
+.social-icons a:hover {
+  color: #ccc;
+}
+
+/* Button */
+.brochure-btn {
+  margin-top: 15px;
+  padding: 10px 18px;
+  border: none;
+  background: #0d6efd;
+  color: #fff;
+  border-radius: 4px;
+}
+
+/* ✅ Mobile */
+@media (max-width: 768px) {
+  .footer-col {
+    justify-content: flex-start; /* no center shift on mobile */
+  }
+
+  .footer-inner {
+    max-width: 100%;
   }
 }

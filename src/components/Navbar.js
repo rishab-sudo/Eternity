@@ -47,15 +47,17 @@ const Navbar = () => {
       <div className={`navbar ${showNav ? "show" : ""}`}>
         <Container fluid className="d-flex justify-content-between align-items-center">
 
-          <div className="navbar-logo">
-            <img src= {require("../assets/eternity-logo.png")} alt="logo" height="40" />
+          <div className="navbar-logo" >
+            <a href="/home">
+            <img  src= {require("../assets/eternity-logo.png")} alt="logo"  />
+            </a>
           </div>
 
      <div className="navbar-links">
 
   <a className="links" href="/">Home</a>
-  <a className="links" href="/vf7">Vf7</a>
-  <a className="links" href="/vf6">Vf6</a>
+  <a className="links" href="/vf7">VF 7</a>
+  <a className="links" href="/vf6">VF 6</a>
   <a className="links" href="/contact">Contact</a>
 
   <a className="enquiry-btn" href="/enquiry">

@@ -1,10 +1,12 @@
 .home-spec{
   padding:45px 0;
   overflow:hidden;
+  /* background-color: aquamarine; */
+  height: fit-content !important;
 }
 
 .spec-container{
-padding: 45px 0px;
+padding: 0px 0px;
 height: 100%;
 /* background-color: bisque; */
 }
@@ -12,7 +14,7 @@ height: 100%;
 .spec-wrapper{
   position:relative;
   width:100%;
-  min-height:650px;
+height: fit-content;
   overflow:hidden;
 }
 
@@ -40,7 +42,7 @@ height: 100%;
   right:0;
   width:55%;
   margin: auto;
-
+margin-top: 5% !important;
   transform:translateX(100%);
   transition:transform 1s ease;
 }

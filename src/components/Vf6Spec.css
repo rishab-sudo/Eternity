@@ -11,7 +11,7 @@ display:flex;
 align-items:center;
 justify-content:center;
 position:relative;
-margin-bottom:40px;
+margin-bottom:42px;
 }
 
 .productSpecHeading{
@@ -20,17 +20,24 @@ text-align:center;
 }
 
 .variantDropdown{
-position:absolute;
-right:0;
-padding:10px 25px;
-border:2px solid #000;
-background:white;
-cursor:pointer;
+  position:absolute;
+  right:0;
+padding: 5px 15px;
+  border:2px solid #000;
+  background:white;
+  cursor:pointer;
+
+}
+
+/* custom arrow */
+.variantDropdownWrapper{
+  position:absolute;
+  right:0;
+  display:inline-block;
 }
 
 
 /* image */
-
 .productImage{
 position:relative;
 margin-bottom:50px;
@@ -76,14 +83,19 @@ justify-content:space-between;
 }
 
 /* arrow */
-
 .arrow{
-width:8px;
-height:8px;
-border-right:2px solid #000;
-border-bottom:2px solid #000;
-transform:rotate(45deg);
-transition:transform 0.3s ease;
+  width:10px;
+  height:10px;
+  color: #000;
+  border-right:2px solid #000;
+  border-bottom:2px solid #000;
+  transform:rotate(45deg);
+  transition: all 0.3s ease;
+}
+
+/* open state → arrow UP */
+.specItem.active .arrow{
+  transform:rotate(-135deg);
 }
 
 /* rotate arrow when open */
@@ -124,4 +136,25 @@ font-weight:500;
 .specValue{
 padding:14px;
 font-weight:600;
+}
+
+@media (max-width: 768px){
+
+  .productSpecTop{
+    flex-direction:column;
+    gap:15px;
+  }
+
+  .variantDropdownWrapper{
+    position:static;
+    width:100%;
+    display:flex;
+    justify-content:center;
+  }
+
+  .variantDropdown{
+    width:200px;
+    text-align:center;
+  }
+
 }
