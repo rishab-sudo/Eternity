@@ -67,14 +67,14 @@ return (
   ]}
 />
 <HomeSpecification
-reverse
-title="VF 6"
-tagline="A compact and stylish electric SUV"
-price="₹ 18,50,000"
-battery="59.6kWh"
-wheel="45cm"
-adas="Level 2"
-image= {require("../assets/vf6-intro.png")}
+  reverse
+  title="VF 6"
+  tagline="A compact and stylish electric SUV"
+  price="₹ 18,50,000"
+  battery="59.6kWh"
+  wheel="45cm"
+  adas="Level 2"
+  image={require("../assets/vf6-intro.png")}
 />
 
  <OverView

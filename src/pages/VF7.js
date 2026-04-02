@@ -65,15 +65,16 @@ return (
      { src: require("../assets/banner/vf7-banner3.png"), alt: "Banner 3" },
   ]}
 />
+
 <HomeSpecification
-reverse
-title="VF 7"
-tagline="A compact and stylish electric SUV"
-price="₹ 18,50,000"
-battery="59.6kWh"
-wheel="45cm"
-adas="Level 2"
-image= {require("../assets/vf7-intro.png")}
+  reverse
+  title="VF 7"
+  tagline="A modern and sporty 5-Seater eSUV"
+  price="₹ 21,89,000"
+  battery="70 kWh"
+  wheel="48.26 cm"
+  adas="Level 2"
+  image={require("../assets/vf7-intro.png")}
 />
 
  <OverView
