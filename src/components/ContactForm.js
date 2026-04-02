@@ -17,6 +17,7 @@ const ContactForm = () => {
     const { name, value } = e.target;
     setForm({ ...form, [name]: value });
 
+    // clear error on typing
     setErrors((prev) => ({ ...prev, [name]: "" }));
   };
 
@@ -74,6 +75,7 @@ const ContactForm = () => {
           subject: "",
           message: "",
         });
+
         setErrors({});
       } else {
         Swal.fire({
@@ -98,73 +100,76 @@ const ContactForm = () => {
       <h3 className="contact-form-title">Send Us a Message</h3>
 
       <form className="contact-form-form" onSubmit={handleSubmit}>
+        
         <div className="contact-form-row">
           <div className="contact-form-field">
-            <label className="contact-form-label">Your Name</label>
+            <label>Your Name</label>
             <input
               type="text"
               name="name"
               placeholder="Enter your name"
-              className="contact-form-input"
               value={form.name}
               onChange={handleChange}
-              required
+              className={`contact-form-input ${errors.name ? "error" : ""}`}
             />
+            {errors.name && <small className="error-text">{errors.name}</small>}
           </div>
 
           <div className="contact-form-field">
-            <label className="contact-form-label">Your Email</label>
+            <label>Your Email</label>
             <input
               type="email"
               name="email"
               placeholder="Enter your email"
-              className="contact-form-input"
               value={form.email}
               onChange={handleChange}
-              required
+              className={`contact-form-input ${errors.email ? "error" : ""}`}
             />
+            {errors.email && <small className="error-text">{errors.email}</small>}
           </div>
         </div>
 
         <div className="contact-form-row">
           <div className="contact-form-field">
-            <label className="contact-form-label">Phone Number</label>
+            <label>Phone Number</label>
             <input
               type="tel"
               name="phone"
               placeholder="Enter your phone number"
-              className="contact-form-input"
               value={form.phone}
               onChange={handleChange}
-              required
+              className={`contact-form-input ${errors.phone ? "error" : ""}`}
             />
+            {errors.phone && <small className="error-text">{errors.phone}</small>}
           </div>
 
           <div className="contact-form-field">
-            <label className="contact-form-label">Subject</label>
+            <label>Subject</label>
             <input
               type="text"
               name="subject"
               placeholder="Enter subject"
-              className="contact-form-input"
               value={form.subject}
               onChange={handleChange}
-              required
+              className={`contact-form-input ${errors.subject ? "error" : ""}`}
             />
+            {errors.subject && <small className="error-text">{errors.subject}</small>}
           </div>
         </div>
 
         <div className="contact-form-field">
-          <label className="contact-form-label">Your Message</label>
+          <label>Your Message</label>
           <textarea
             name="message"
             placeholder="Type your message here..."
-            className="contact-form-textarea"
             rows="5"
             value={form.message}
             onChange={handleChange}
-            required
+            className={`contact-form-textarea ${errors.message ? "error" : ""}`}
           ></textarea>
+          {errors.message && (
+            <small className="error-text">{errors.message}</small>
+          )}
         </div>
 
         <button type="submit" className="contact-form-btn">

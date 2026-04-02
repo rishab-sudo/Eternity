@@ -27,8 +27,8 @@ const Footer = () => {
                 </p>
 
                 <div className="social-icons">
-                  <a href="#"><FaFacebookF /></a>
-                  <a href="#"><FaInstagram /></a>
+                  <a href="https://www.facebook.com/profile.php?id=61588650280727"><FaFacebookF /></a>
+                  <a href="https://www.instagram.com/eternity.lucknow/"><FaInstagram /></a>
                 </div>
 
               </div>
