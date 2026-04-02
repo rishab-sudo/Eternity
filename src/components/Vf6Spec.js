@@ -7,8 +7,8 @@ const Vf6Spec = () => {
 const variants = {
   earth: {
     name: "VF6 Earth",
-    price: "₹25,00,000",
-    image: require("../assets/vf6_Banner.jpg"),
+    price: "₹ 17,29,000",
+    image: require("../assets/specification/spec-vf6.png"),
 
     specs: {
 
@@ -83,8 +83,8 @@ const variants = {
 
 wind: {
   name: "VF6 Wind",
-  price: "₹27,00,000",
-  image: require("../assets/vf6_Banner.jpg"),
+  price: "₹ 18,69,000",
+  image: require("../assets/specification/spec-vf6.png"),
 
   specs: {
 
@@ -159,8 +159,8 @@ wind: {
 
 infinity: {
   name: "VF6 Wind Infinity",
-  price: "₹29,00,000",
-  image: require("../assets/vf6_Banner.jpg"),
+  price: "₹ 19,19,000",
+  image: require("../assets/specification/spec-vf6.png"),
 
   specs: {
 
@@ -252,7 +252,7 @@ infinity: {
       <div className="productSpecTop">
 
         <h2 className="productSpecHeading">
-          VF6 Specifications
+     VF6 Detailed Specifications
         </h2>
 <div className="variantDropdownWrapper">
   <select

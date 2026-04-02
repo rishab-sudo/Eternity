@@ -7,9 +7,10 @@ const HomeProduct = () => {
   const products = [
     { img: require("../assets/products/vf6-zenith-grey.png") },
     { img: require("../assets/products/vf6-urban-mint.png") },
-    { img: require("../assets/products/vf6-jet-black.png") },
-    { img: require("../assets/products/vf6-infinity-blanc.png") },
     { img: require("../assets/products/vf6-desat-silver.png") },
+    { img: require("../assets/products/vf6-infinity-blanc.png") },
+
+        { img: require("../assets/products/vf6-jet-black.png") },
     { img: require("../assets/products/vf6-crimson-red.png") },
 
     { img: require("../assets/products/vf7-grey.png") },
@@ -74,7 +75,7 @@ const HomeProduct = () => {
 
         {/* Color Buttons */}
 
-<p>Choose premium</p>
+     <p>Choose premium color</p>
         <div className="color-selector">
           {colors.map((color, i) => (
 

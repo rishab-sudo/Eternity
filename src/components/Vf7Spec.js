@@ -7,7 +7,7 @@ const Vf7Spec = () => {
 
     earth: {
       name: "VF7 Earth",
-      price: "₹—",
+      price: "₹ 21,89,000",
       image: require("../assets/vf7_Banner.jpg"),
 
       specs: {
@@ -73,7 +73,7 @@ const Vf7Spec = () => {
 
     wind: {
       name: "VF7 Wind",
-      price: "₹—",
+      price: "₹ 24,69,000",
       image: require("../assets/vf7_Banner.jpg"),
 
       specs: {
@@ -140,7 +140,7 @@ const Vf7Spec = () => {
 
     windInfinity: {
   name: "VF7 Wind Infinity",
-  price: "₹—",
+  price: "₹ 25,19,000",
   image: require("../assets/vf7_Banner.jpg"),
 
   specs: {
@@ -211,7 +211,7 @@ const Vf7Spec = () => {
 },
 sky: {
   name: "VF7 Sky",
-  price: "₹—",
+  price: "₹ 26,19,000",
   image: require("../assets/vf7_Banner.jpg"),
 
   specs: {
@@ -288,7 +288,7 @@ sky: {
 
 skyInfinity: {
   name: "VF7 Sky Infinity",
-  price: "₹—",
+  price: "₹ 26,79,000",
   image: require("../assets/vf7_Banner.jpg"),
 
   specs: {
@@ -378,7 +378,7 @@ skyInfinity: {
     <section className="productSpec">
 
       <div className="productSpecTop">
-        <h2 className="productSpecHeading">VF7 Specifications</h2>
+        <h2 className="productSpecHeading">VF7 Detailed Specifications</h2>
 
         <select
           className="variantDropdown"
