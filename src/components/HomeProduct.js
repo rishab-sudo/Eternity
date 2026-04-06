@@ -9,8 +9,7 @@ const HomeProduct = () => {
     { img: require("../assets/products/vf6-urban-mint.png") },
     { img: require("../assets/products/vf6-desat-silver.png") },
     { img: require("../assets/products/vf6-infinity-blanc.png") },
-
-        { img: require("../assets/products/vf6-jet-black.png") },
+    { img: require("../assets/products/vf6-jet-black.png") },
     { img: require("../assets/products/vf6-crimson-red.png") },
 
     { img: require("../assets/products/vf7-grey.png") },
@@ -21,13 +20,32 @@ const HomeProduct = () => {
     { img: require("../assets/products/vf7-red.png") }
   ];
 
+  // ✅ Add color names here
   const colors = [
-    require("../assets/products/color-icon-Zenith-Grey.png"),
-    require("../assets/products/color-icon-Urban-Mint.png"),
-    require("../assets/products/color-icon-jet-black.png"),
-    require("../assets/products/color-icon-infinity.png"),
-    require("../assets/products/color-icon-desat-silver.png"),
-    require("../assets/products/color-icon-Crimson-Red.png")
+    {
+      img: require("../assets/products/color-icon-Zenith-Grey.png"),
+      name: "Zenith Grey"
+    },
+    {
+      img: require("../assets/products/color-icon-Urban-Mint.png"),
+      name: "Urban Mint"
+    },
+    {
+      img: require("../assets/products/color-icon-jet-black.png"),
+      name: "Jet Black"
+    },
+    {
+      img: require("../assets/products/color-icon-infinity.png"),
+      name: "Infinity Blanc"
+    },
+    {
+      img: require("../assets/products/color-icon-desat-silver.png"),
+      name: "Desat Silver"
+    },
+    {
+      img: require("../assets/products/color-icon-Crimson-Red.png"),
+      name: "Crimson Red"
+    }
   ];
 
   const [index, setIndex] = useState(0);
@@ -37,11 +55,12 @@ const HomeProduct = () => {
   };
 
   const handleColorClick = (colorIndex) => {
-
     const model = index >= 6 ? 1 : 0; // 0 = VF6, 1 = VF7
     setIndex(colorIndex + model * 6);
-
   };
+
+  // ✅ Active color name
+  const activeColor = colors[index % 6]?.name;
 
   return (
     <Container fluid className="home-product">
@@ -49,7 +68,7 @@ const HomeProduct = () => {
 
         <div className="product-heading">
           <h2>Our Products</h2>
-          <p>Available in 6 colours</p>
+          <p className="hp-tagline">Available in 6 colours</p>
         </div>
 
         <Carousel
@@ -73,9 +92,12 @@ const HomeProduct = () => {
 
         </Carousel>
 
-        {/* Color Buttons */}
+        {/* ✅ Dynamic Color Name */}
+        <p className="active-color hp-tagline">
+          {activeColor}
+        </p>
 
-     <p>Choose premium color</p>
+        {/* Color Buttons */}
         <div className="color-selector">
           {colors.map((color, i) => (
 
@@ -84,11 +106,10 @@ const HomeProduct = () => {
               className={`color-circle ${index % 6 === i ? "active" : ""}`}
               onClick={() => handleColorClick(i)}
             >
-              <img src={color} alt="color option" />
+              <img src={color.img} alt={color.name} />
             </div>
 
           ))}
-
         </div>
 
       </Container>

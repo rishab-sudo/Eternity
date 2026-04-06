@@ -2,7 +2,7 @@ import React from 'react'
 import HomeBanner from '../components/HomeBanner'
 import HomeAbout from '../components/HomeAbout'
 import HomeProduct from '../components/HomeProduct'
-
+import All5 from '../components/All5'
 import OverView from '../components/OverView'
 import Customer from '../components/Customer'
 import TestDrive from "../components/TestDrive"
@@ -38,6 +38,8 @@ const Home = () => {
         <HomeBanner/>
        <HomeAbout/>
        <HomeProduct/>
+       <All5/>
+
         <OverView
       title="Product Over View"
       data={overviewData}

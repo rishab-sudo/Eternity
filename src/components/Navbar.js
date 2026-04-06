@@ -28,7 +28,7 @@ const Navbar = () => {
           <div className="navbar-logo">
             <a href="/home">
               <img
-                src={require("../assets/eternity-logo.png")}
+                src={require("../assets/eternity-logo-white.png")}
                 alt="logo"
               />
             </a>

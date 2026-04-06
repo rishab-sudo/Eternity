@@ -8,6 +8,7 @@ import {
   FaInstagram,
   
 } from "react-icons/fa";
+import { FaChevronRight } from "react-icons/fa";
 
 import ContactForm from "../components/ContactForm";
 import "./Contact.css";
@@ -15,10 +16,19 @@ import "./Contact.css";
 const ContactUs = () => {
   return (
     <>
-    <section className="contact-hero">
+<section className="contact-hero">
   <div className="hero-overlay"></div>
 
-  {/* animated line */}
+<div className="hero-content">
+  <h1>Contact Us</h1>
+
+  <div className="breadcrumb">
+    <a href="/">Home</a> 
+    <FaChevronRight className="breadcrumb-icon" />
+    <span>Contact</span>
+  </div>
+</div>
+
   <div className="scroll-line-wrapper">
     <div className="scroll-line"></div>
   </div>

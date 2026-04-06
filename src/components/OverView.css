@@ -5,7 +5,9 @@ background:#f5f5f5;
 /* background-color: #000; */
 overflow:hidden;
 }
-
+.overview-heading{
+    text-align: center;
+}
 /* slide width */
 .spec-slide{
 width:75%;

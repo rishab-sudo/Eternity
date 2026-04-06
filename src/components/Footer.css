@@ -4,18 +4,25 @@
   padding: 45px 0;
 }
 
-/* Column center */
-.footer-col {
+/* ✅ Make all columns equal height */
+.footer .row {
   display: flex;
-  justify-content: center !important; 
- 
+  align-items: stretch;
 }
 
-/* Inner content box */
+/* Column */
+.footer-col {
+  display: flex;
+  justify-content: center;
+  align-items: center; /* vertical center */
+  text-align: left;  /* 🔥 center text */
+}
+
+/* Inner content */
 .footer-inner {
   width: 100%;
-  max-width: 350px;  /* 🔥 controls alignment */
-  text-align: left;
+  max-width: 320px;
+  margin: 0 auto;
 }
 
 /* Logo */
@@ -74,12 +81,8 @@
 
 .social-icons a {
   color: #fff;
-  margin-right: 12px;
+  margin: 0 8px;
   font-size: 18px;
-}
-
-.social-icons a:hover {
-  color: #ccc;
 }
 
 /* Button */
@@ -92,10 +95,11 @@
   border-radius: 4px;
 }
 
-/* ✅ Mobile */
+/* ✅ Mobile Fix */
 @media (max-width: 768px) {
   .footer-col {
-    justify-content: flex-start; /* no center shift on mobile */
+    justify-content: center;
+    text-align: center;
   }
 
   .footer-inner {

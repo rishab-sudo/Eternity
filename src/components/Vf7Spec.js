@@ -8,7 +8,7 @@ const Vf7Spec = () => {
     earth: {
       name: "VF7 Earth",
       price: "₹ 21,89,000",
-      image: require("../assets/vf7_Banner.jpg"),
+      image: require("../assets/specification/spec-table-vf7.png"),
 
       specs: {
         drivetrain: {
@@ -74,7 +74,7 @@ const Vf7Spec = () => {
     wind: {
       name: "VF7 Wind",
       price: "₹ 24,69,000",
-      image: require("../assets/vf7_Banner.jpg"),
+      image: require("../assets/specification/spec-table-vf7.png"),
 
       specs: {
         drivetrain: {
@@ -141,7 +141,7 @@ const Vf7Spec = () => {
     windInfinity: {
   name: "VF7 Wind Infinity",
   price: "₹ 25,19,000",
-  image: require("../assets/vf7_Banner.jpg"),
+  image: require("../assets/specification/spec-table-vf7.png"),
 
   specs: {
     drivetrain: {
@@ -212,7 +212,7 @@ const Vf7Spec = () => {
 sky: {
   name: "VF7 Sky",
   price: "₹ 26,19,000",
-  image: require("../assets/vf7_Banner.jpg"),
+  image: require("../assets/specification/spec-table-vf7.png"),
 
   specs: {
 
@@ -289,7 +289,7 @@ sky: {
 skyInfinity: {
   name: "VF7 Sky Infinity",
   price: "₹ 26,79,000",
-  image: require("../assets/vf7_Banner.jpg"),
+  image: require("../assets/specification/spec-table-vf7.png"),
 
   specs: {
 

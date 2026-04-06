@@ -6,16 +6,13 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 45px 20px;
+  padding: 60px 20px;
 }
 
 /* Overlay */
 .testdrive-overlay {
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+  inset: 0;
   background: rgba(0, 0, 0, 0.8);
   z-index: 1;
 }
@@ -27,9 +24,9 @@
   width: 100%;
   max-width: 1200px;
   display: flex;
-  gap: 40px;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-between; /* 🔥 main fix */
+  gap: 60px;
 }
 
 /* LEFT */
@@ -50,7 +47,6 @@
   line-height: 1.6;
   margin-bottom: 25px;
   max-width: 500px;
-
 }
 
 /* BUTTON */
@@ -89,6 +85,7 @@
 /* RIGHT MAP */
 .testdrive-right {
   flex: 1;
+  margin-left: auto;
 }
 
 .testdrive-right iframe {
@@ -98,17 +95,44 @@
   border-radius: 10px;
 }
 
-/* RESPONSIVE */
+/* RIGHT MAP */
+.testdrive-right {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end; /* 🔥 right align fix */
+}
+
+.testdrive-right iframe {
+  width: 100%;
+  max-width: 450px;
+  height: 300px;
+  border: 0;
+  border-radius: 10px;
+}
+
+/* 🔥 RESPONSIVE (IMPORTANT) */
 @media (max-width: 768px) {
   .testdrive-container {
     flex-direction: column;
+    text-align: center;
+    gap: 30px;
+  }
+
+  .testdrive-left {
+    text-align: center;
+  }
+
+  .testdrive-right {
+    justify-content: center;
+    width: 100%;
+  }
+
+  .testdrive-right iframe {
+    width: 100%;
+    height: 250px;
   }
 
   .testdrive-heading {
     font-size: 28px;
-  }
-
-  .testdrive-right iframe {
-    height: 250px;
   }
 }

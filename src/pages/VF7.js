@@ -5,6 +5,7 @@ import OverView from "../components/OverView";
 
 import HomeSpecification from '../components/HomeSpecification'
 import Vf7Spec from "../components/Vf7Spec"
+import TestDrive from '../components/TestDrive';
 
 const VF7 = () => {
 
@@ -84,7 +85,7 @@ return (
 
 <Vf7Spec/>
 
-   
+    <TestDrive/>
 
  </>
   )
