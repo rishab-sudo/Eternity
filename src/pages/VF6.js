@@ -38,54 +38,53 @@ const MotionSection = ({ children }) => {
 };
 
 const VF6 = () => {
-  const overviewData = [
-    {
-      img: require("../assets/products/vinfast_vf7-01.jpg"),
-      title: "High Strength",
-      desc: "Durable panels with excellent structural performance.",
-    },
-    {
-      img: require("../assets/products/vinfast_vf7-02.jpg"),
-      title: "Weather Resistant",
-      desc: "Designed to withstand harsh weather conditions.",
-    },
-    {
-      img: require("../assets/products/vinfast_vf7-03.jpg"),
-      title: "Fire Safety",
-      desc: "Manufactured with high fire resistance standards.",
-    },
-    {
-      img: require("../assets/products/vinfast_vf7-04.jpg"),
-      title: "Eco Friendly",
-      desc: "Sustainable and environmentally safe materials.",
-    },
-    {
-      img: require("../assets/products/vinfast_vf7-05.jpg"),
-      title: "Eco Friendly",
-      desc: "Sustainable and environmentally safe materials.",
-    },
-    {
-      img: require("../assets/products/vinfast_vf7-06.jpg"),
-      title: "Eco Friendly",
-      desc: "Sustainable and environmentally safe materials.",
-    },
-    {
-      img: require("../assets/products/vinfast_vf7-07.jpg"),
-      title: "Eco Friendly",
-      desc: "Sustainable and environmentally safe materials.",
-    },
-    {
-      img: require("../assets/products/vinfast_vf7-08.jpg"),
-      title: "Eco Friendly",
-      desc: "Sustainable and environmentally safe materials.",
-    },
-    {
-      img: require("../assets/products/vinfast_vf7-09.jpg"),
-      title: "Eco Friendly",
-      desc: "Sustainable and environmentally safe materials.",
-    },
-  ];
-
+const overviewData = [
+  {
+    img: require("../assets/products/vinfast_vf7-01.jpg"),
+    title: "Bold Exterior Design",
+    desc: "A striking front profile with premium styling and aerodynamic elegance.",
+  },
+  {
+    img: require("../assets/products/vinfast_vf7-02.jpg"),
+    title: "Panoramic Sunroof",
+    desc: "Enjoy an open, airy cabin with natural light and a luxurious driving feel.",
+  },
+  {
+    img: require("../assets/products/vinfast_vf7-03.jpg"),
+    title: "Adjustable Comfort",
+    desc: "Smart seat height adjustment with ergonomic support for a personalized drive.",
+  },
+  {
+    img: require("../assets/products/vinfast_vf7-04.jpg"),
+    title: "Strong Body Build",
+    desc: "High-strength body structure designed for safety, durability, and confidence.",
+  },
+  {
+    img: require("../assets/products/vinfast_vf7-05.jpg"),
+    title: "Premium Alloy Wheels",
+    desc: "Stylish and durable alloy wheels built for stability and road presence.",
+  },
+  {
+    img: require("../assets/products/vinfast_vf7-06.jpg"),
+    title: "Efficient EV Performance",
+    desc: "Experience smooth electric power, instant torque, and an eco-friendly ride.",
+  },
+  {
+    img: require("../assets/products/vinfast_vf7-07.jpg"),
+    title: "360° Camera View",
+    desc: "Advanced surround-view camera system for safer parking and easier maneuvering.",
+  },
+  {
+    img: require("../assets/products/vinfast_vf7-08.jpg"),
+    title: "Smart ORVMs",
+    desc: "Stylish side mirrors with enhanced visibility, safety, and modern convenience.",
+  },
+  {
+    img: require("../assets/products/vinfast_vf7-09.jpg"),
+    title: "Premium Cabin Experience",
+    desc: "A spacious interior crafted for comfort, luxury, and every journey.",
+  },
+];
   return (
     <>
       <MotionSection>

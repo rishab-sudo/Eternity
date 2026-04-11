@@ -43,11 +43,12 @@
   background: rgba(0, 0, 0, 0.45);
   padding: 8px 18px;
   border-radius: 12px;
+  
 }
 
-.mpv-image-text h2 {
+.mpv-image-text h3 {
+  font-size: 20px !important;
     text-align: center;
-  font-size: 42px;
   margin: 0;
   font-weight: 700;
 }
