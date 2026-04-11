@@ -6,7 +6,6 @@ import {
   FaMapMarkerAlt,
   FaFacebookF,
   FaInstagram,
-  
 } from "react-icons/fa";
 import { FaChevronRight } from "react-icons/fa";
 
@@ -16,69 +15,97 @@ import "./Contact.css";
 const ContactUs = () => {
   return (
     <>
-<section className="contact-hero">
-  <div className="hero-overlay"></div>
+      <section className="contact-hero">
+        <div className="hero-overlay"></div>
 
-<div className="hero-content">
-  <h1>Contact Us</h1>
+        <div className="hero-content">
+          <h1>Contact Us</h1>
 
-  <div className="breadcrumb">
-    <a href="/">Home</a> 
-    <FaChevronRight className="breadcrumb-icon" />
-    <span>Contact</span>
-  </div>
-</div>
+          <div className="breadcrumb">
+            <a href="/">Home</a>
+            <FaChevronRight className="breadcrumb-icon" />
+            <span>Contact</span>
+          </div>
+        </div>
 
-  <div className="scroll-line-wrapper">
-    <div className="scroll-line"></div>
-  </div>
-</section>
-   
+        <div className="scroll-line-wrapper">
+          <div className="scroll-line"></div>
+        </div>
+      </section>
+
       <section className="contact-us">
         <Container>
-
           {/* CONTACT INFO + MAP */}
           <Row className="contact-us-main-row">
-
             {/* CONTACT INFO */}
             <Col lg={5} md={12}>
               <div className="contact-info-box">
-
                 <h4>Get In Touch</h4>
 
                 <div className="contact-item">
                   <FaPhoneAlt />
                   <div>
-                    <p className="contact-label"> Phone </p>
-                    <p className="contact-text"> (+91) 65xxxxxxxx </p>
+                    <p className="contact-label">Phone</p>
+
+                    <p className="contact-text">
+                      <a href="tel:+918679509990" className="contact-link">
+                        (+91) 8679509990
+                      </a>
+                    </p>
+
+                    <p className="contact-text">
+                      <a href="tel:+918679309990" className="contact-link">
+                        (+91) 8679309990
+                      </a>
+                    </p>
                   </div>
                 </div>
 
                 <div className="contact-item">
                   <FaEnvelope />
                   <div>
-                    <p className="contact-label"> Email </p>
-                    <p className="contact-text"> ABC@gmail.com </p>
+                    <p className="contact-label">Email</p>
+
+                    <p className="contact-text">
+                      <a
+                        href="mailto:eternity.lko@gmail.com"
+                        className="contact-link"
+                      >
+                        eternity.lko@gmail.com
+                      </a>
+                    </p>
                   </div>
                 </div>
 
                 <div className="contact-item">
                   <FaMapMarkerAlt />
                   <div>
-                    <p className="contact-label"> Address </p>
+                    <p className="contact-label">Address</p>
                     <p className="contact-text">
-                     NH-24 Ayodhya Road, Road, Anaura Kala, near Indira Canal, Faizabad, Lucknow, Uttar Pradesh 227105
+                      NH-24 Ayodhya Road, Road, Anaura Kala, near Indira Canal,
+                      Faizabad, Lucknow, Uttar Pradesh 227105
                     </p>
                   </div>
                 </div>
 
                 {/* SOCIAL MEDIA */}
                 <div className="contact-social">
-                  <a href="https://www.facebook.com/profile.php?id=61588345141535"><FaFacebookF /></a>
-                  <a href="https://www.instagram.com/megagreencity/"><FaInstagram /></a>
-                
-                </div>
+                  <a
+                    href="https://www.facebook.com/profile.php?id=61588345141535"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <FaFacebookF />
+                  </a>
 
+                  <a
+                    href="https://www.instagram.com/megagreencity/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <FaInstagram />
+                  </a>
+                </div>
               </div>
             </Col>
 
@@ -97,14 +124,12 @@ const ContactUs = () => {
                 ></iframe>
               </div>
             </Col>
-
           </Row>
 
-          {/* FORM (same position) */}
+          {/* FORM */}
           <div className="contact-us-form-wrapper">
             <ContactForm />
           </div>
-
         </Container>
       </section>
     </>

@@ -15,14 +15,42 @@ import user5 from "../assets/user11.jpg";
 import user6 from "../assets/user11.jpg";
 
 const customers = [
-  { name: "Sophia Garcia", text: "Excellent experience!", img: user1 },
-  { name: "Isabella Lee", text: "Smooth process.", img: user2 },
-  { name: "Ethan Patel", text: "Loved the service.", img: user3 },
-  { name: "Samuel Brown", text: "Very professional.", img: user4 },
-  { name: "Daniel Smith", text: "Highly recommended.", img: user5 },
-  { name: "Olivia Johnson", text: "Amazing support.", img: user6 },
+  { 
+    name: "Aarav Sharma", 
+    text: "Switching to an EV felt like a big step, but VinFast Eternity made it effortless. The car is incredibly smooth, silent, and futuristic. Truly a next-gen driving experience.", 
+    img: user1 
+  },
+  { 
+    name: "Ishita Verma", 
+    text: "From the test drive to delivery, everything was seamless. The team explained every feature patiently, and the car itself feels premium in every sense.", 
+    img: user2 
+  },
+  { 
+    name: "Rohan Mehta", 
+    text: "The performance surprised me the most—quick acceleration, zero noise, and amazing comfort. VinFast has completely changed how I look at driving.", 
+    img: user3 
+  },
+  { 
+    name: "Neha Kapoor", 
+    text: "What stands out is their after-sales support. Quick responses, helpful staff, and a genuinely smooth ownership experience. It feels reassuring.", 
+    img: user4 
+  },
+  { 
+    name: "Aditya Singh", 
+    text: "Charging, range, performance—everything is well balanced. The team at Eternity Lucknow guided me perfectly to choose the right EV for my needs.", 
+    img: user5 
+  },
+  { 
+    name: "Priya Nair", 
+    text: "The design is sleek, the drive is silent, and the technology inside is impressive. It’s not just a car, it’s a lifestyle upgrade.", 
+    img: user6 
+  },
+  { 
+    name: "Karan Malhotra", 
+    text: "I was unsure about EVs initially, but VinFast changed my perspective. Low running costs, zero emissions, and a premium feel—couldn’t have asked for more.", 
+    img: user1 
+  }
 ];
-
 const Customer = () => {
   return (
     <section className="customer-section">

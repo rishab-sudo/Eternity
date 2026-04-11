@@ -29,7 +29,7 @@ function App() {
     const timer = setTimeout(() => {
       setLoading(false);
       sessionStorage.setItem("preloaderShown", "true");
-    }, 5000);
+    }, 2500);
 
     return () => clearTimeout(timer);
   }, []);

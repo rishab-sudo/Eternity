@@ -16,16 +16,13 @@ const HomeAbout = () => {
                 <h2>About Our Vehicles</h2>
 
                 <p>
-                  We deliver premium vehicles designed with advanced technology,
-                  exceptional comfort, and powerful performance. Our focus is to
-                  combine innovation, safety, and luxury to provide the best
-                  driving experience.
+           At Eternity VinFast Lucknow, we bring you the future of mobility with premium electric vehicles crafted for performance, comfort, and sustainability. Our EV range combines 
+           cutting-edge technology, intelligent safety features, and elegant design to deliver a smooth, powerful, and eco-friendly driving experience.
                 </p>
 
                 <p>
-                  From modern electric vehicles to high-performance machines,
-                  our range is built to meet the needs of today's drivers while
-                  shaping the future of mobility.
+                From smart city drives to long-distance journeys, VinFast electric cars are built to match the needs of modern drivers. With advanced battery technology, luxurious interiors, and innovative features, we are committed to redefining the way 
+                Lucknow drives cleaner, smarter, and more connected.
                 </p>
               </div>
             </Col>

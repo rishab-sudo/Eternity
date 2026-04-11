@@ -19,13 +19,13 @@
 /* CARD */
 .customer-card {
   background: #fff;
-  padding: 60px 20px 30px;
+  padding: 15px 20px 30px;
   border-radius: 12px;
   position: relative;
   text-align: center;
   box-shadow: 0 10px 25px rgba(0,0,0,0.05);
   transition: 0.3s;
-  height: 100%;
+  height: 280px;
 }
 
 .customer-card:hover {

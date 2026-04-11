@@ -20,8 +20,9 @@ const All5 = () => {
 
         {/* Hover Content */}
         <div className="all5-overlay">
-          <h2>Premium Living Spaces</h2>
-          <p>Experience luxury, comfort, and smart design in every detail.</p>
+          <h2>Explore Our EV Lineup</h2>
+          <p>Experience intelligent design, unmatched comfort,
+             and advanced innovation in every VinFast model. Explore our range of premium electric vehicles crafted to deliver performance, luxury, and a smarter driving experience.</p>
         </div>
       </div>
 

@@ -41,23 +41,23 @@ const Home = () => {
   const overviewData = [
     {
       img: require("../assets/specification/vf-spf3.jpg"),
-      title: "High Strength",
-      desc: "Durable panels with excellent structural performance.",
+title: "Precision Steering",
+desc: "Enjoy smooth handling, excellent balance, and advanced drive modes for complete control on every journey.",
     },
     {
       img: require("../assets/specification/vf-spf2.jpg"),
-      title: "Weather Resistant",
-      desc: "Designed to withstand harsh weather conditions.",
+    title: "Comfort Seating",
+desc: "Premium heat-resistant seats with ergonomic support ensure maximum comfort and a relaxed drive in every season.",
     },
     {
       img: require("../assets/specification/vf-spf1.jpg"),
-      title: "Fire Safety",
-      desc: "Manufactured with high fire resistance standards.",
+    title: "Adjustable Comfort",
+desc: "Smart seat height adjustment and ergonomic support ensure a personalized, comfortable driving experience for every journey.",
     },
     {
       img: require("../assets/specification/vf-spf4.jpg"),
-      title: "Eco Friendly",
-      desc: "Sustainable and environmentally safe materials.",
+title: "Panoramic Sunroof",
+desc: "Enjoy an open, airy cabin with a wide panoramic sunroof that adds light, luxury, and a premium driving feel.",
     },
   ];
 

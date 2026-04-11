@@ -6,7 +6,7 @@ import "./FloatingButtons.css";
 const FloatingButtons = () => {
 
   const handleWhatsAppClick = () => {
-    const phoneNumber = "919999999999"; // replace with your number
+    const phoneNumber = "918679509990"; // replace with your number
     const message = "Hello, I want to know more!";
     const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
     window.open(url, "_blank");
