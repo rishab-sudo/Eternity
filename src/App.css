@@ -42,3 +42,87 @@ button,
 li {
   font-family: 'Manrope', sans-serif;
 }
+/* PRELOADER */
+.preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(135deg, #000000, #111111, #1c1c1c);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 99999;
+}
+
+.loader-box {
+  text-align: center;
+  animation: fadeZoom 1.5s ease-in-out infinite alternate;
+}
+
+.loader-ring {
+  width: 90px;
+  height: 90px;
+  border: 4px solid rgba(255, 255, 255, 0.1);
+  border-top: 4px solid #00e5ff;
+  border-right: 4px solid #ffffff;
+  border-radius: 50%;
+  margin: 0 auto 30px;
+  animation: spin 1.2s linear infinite;
+  box-shadow: 0 0 25px rgba(0, 229, 255, 0.4);
+}
+
+.loader-text {
+  color: #fff;
+  font-size: 2.2rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin: 0;
+  text-shadow: 0 0 20px rgba(255, 255, 255, 0.15);
+}
+
+.loader-text span {
+  display: block;
+  font-size: 1rem;
+  font-weight: 400;
+  margin-top: 10px;
+  color: #00e5ff;
+  letter-spacing: 4px;
+}
+
+/* ANIMATIONS */
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes fadeZoom {
+  from {
+    transform: scale(1);
+    opacity: 0.9;
+  }
+  to {
+    transform: scale(1.05);
+    opacity: 1;
+  }
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .loader-text {
+    font-size: 1.5rem;
+  }
+
+  .loader-text span {
+    font-size: 0.8rem;
+    letter-spacing: 2px;
+  }
+
+  .loader-ring {
+    width: 70px;
+    height: 70px;
+  }
+}
