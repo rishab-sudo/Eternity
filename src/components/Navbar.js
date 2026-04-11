@@ -1,8 +1,11 @@
 import React, { useState, useEffect } from "react";
 import { Container } from "react-bootstrap";
+import FormPopup from "./FormPopup";
 import "./Navbar.css";
 
+
 const Navbar = () => {
+  const [showPopup, setShowPopup] = useState(false);
   const [showNav, setShowNav] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
 
@@ -36,13 +39,17 @@ const Navbar = () => {
 
           <div className="navbar-links">
             <a className="links" href="/">Home</a>
+            <a className="links" href="/mpv">VF MPV 7</a>
             <a className="links" href="/vf7">VF 7</a>
             <a className="links" href="/vf6">VF 6</a>
             <a className="links" href="/contact">Contact</a>
 
-            <a className="enquiry-btn" href="/enquiry">
-              Enquiry
-            </a>
+           <button className="enquiry-btn" onClick={() => setShowPopup(true)}>Enquiry</button>
+
+      <FormPopup
+        isOpen={showPopup}
+        onClose={() => setShowPopup(false)}
+      />
           </div>
 
           <div className="navbar-menu" onClick={toggleMenu}>
@@ -60,6 +67,7 @@ const Navbar = () => {
         </div>
 
         <a className="links" href="/" onClick={() => setMenuOpen(false)}>Home</a>
+                <a className="links" href="/mpv" onClick={() => setMenuOpen(false)}>MPV7</a>
         <a className="links" href="/vf7" onClick={() => setMenuOpen(false)}>VF 7</a>
         <a className="links" href="/vf6" onClick={() => setMenuOpen(false)}>VF 6</a>
         <a className="links" href="/contact" onClick={() => setMenuOpen(false)}>Contact</a>

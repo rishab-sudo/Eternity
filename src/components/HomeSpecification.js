@@ -42,33 +42,37 @@ const HomeSpecification = ({
         <div className="spec-wrapper">
 
           {/* TEXT SECTION */}
-          <div className={`spec-text ${visible ? "show" : ""}`}>
+{/* TEXT SECTION */}
+<div className={`spec-text ${visible ? "show" : ""}`}>
 
-            <h2>{title}</h2>
-            <p className="tagline">{tagline}</p>
+  <h2>{title}</h2>
+  <p className="tagline">{tagline}</p>
 
-            <h3 className="price">{price}</h3>
+  <h3 className="price">{price}</h3>
 
-            <div className="spec-box">
+  {/* Mobile / Tablet image */}
+  <div className="mobile-spec-img">
+    <img src={image} alt={title} />
+  </div>
 
-              <div>
-                <span>Battery Capacity*</span>
-                <h5>{battery}</h5>
-              </div>
+  <div className="spec-box">
+    <div>
+      <span>Battery Capacity*</span>
+      <h5>{battery}</h5>
+    </div>
 
-              <div>
-                <span>Wheel Size*</span>
-                <h5>{wheel}</h5>
-              </div>
+    <div>
+      <span>Wheel Size*</span>
+      <h5>{wheel}</h5>
+    </div>
 
-              <div>
-                <span>ADAS</span>
-                <h5>{adas}</h5>
-              </div>
+    <div>
+      <span>ADAS</span>
+      <h5>{adas}</h5>
+    </div>
+  </div>
 
-            </div>
-
-          </div>
+</div>
 
           {/* IMAGE SECTION */}
           <div className={`spec-img ${visible ? "show" : ""}`}>

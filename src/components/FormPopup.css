@@ -1,0 +1,126 @@
+/* FormPopup.css */
+.formpopup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.65);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  padding: 20px;
+}
+
+.formpopup-container {
+  background: #fff;
+  width: 100%;
+  max-width: 500px;
+  border-radius: 20px;
+  padding: 35px 30px;
+  box-shadow: 0 15px 50px rgba(0, 0, 0, 0.25);
+  position: relative;
+  animation: formpopupFade 0.3s ease;
+}
+
+@keyframes formpopupFade {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.formpopup-close {
+  position: absolute;
+  top: 12px;
+  right: 16px;
+  background: transparent;
+  border: none;
+  font-size: 28px;
+  cursor: pointer;
+  color: #333;
+}
+
+.formpopup-title {
+  text-align: center;
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 25px;
+  color: #111;
+}
+
+.formpopup-form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.formpopup-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.formpopup-label {
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #222;
+}
+
+.formpopup-input {
+  width: 100%;
+  padding: 14px 16px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  font-size: 15px;
+  outline: none;
+  transition: 0.3s;
+}
+
+.formpopup-input:focus {
+  border-color: #000;
+  box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.08);
+}
+
+.formpopup-error {
+  color: red;
+  font-size: 13px;
+  margin-top: 5px;
+}
+
+.formpopup-submit {
+  width: 100%;
+  padding: 15px;
+  background: #000;
+  color: #fff;
+  border: none;
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.formpopup-submit:hover {
+  background: #222;
+}
+
+@media (max-width: 768px) {
+  .formpopup-container {
+    padding: 25px 20px;
+    border-radius: 16px;
+  }
+
+  .formpopup-title {
+    font-size: 22px;
+  }
+
+  .formpopup-input {
+    padding: 12px 14px;
+  }
+}

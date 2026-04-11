@@ -1,38 +1,44 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap');
+
+/* Global */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Manrope', sans-serif;
+  background: #fff;
+  color: #111;
+}
+
+/* App */
 .App {
-
+  font-family: 'Manrope', sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Premium classy headings */
+/* Numbers alignment fix */
+h1,
+h2,
+h3,
+h4,
+h5,
+.price,
+.spec-box h5 {
+  font-variant-numeric: lining-nums;
+  font-feature-settings: "lnum" 1;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* h2 styling */
+h2 {
+  font-size: 2.5rem !important;
+  line-height: 1.2;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Body text */
+p,
+span,
+a,
+button,
+li {
+  font-family: 'Manrope', sans-serif;
 }

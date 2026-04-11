@@ -1,7 +1,9 @@
-import React from "react";
+import React,{useState} from "react";
+import FormPopup from "./FormPopup";
 import "./TestDrive.css";
 
 const TestDrive = () => {
+    const [showPopup, setShowPopup] = useState(false);
   return (
     <section className="testdrive-section">
       <div className="testdrive-overlay"></div>
@@ -18,7 +20,12 @@ const TestDrive = () => {
             Book your test drive today and feel the difference behind the wheel.
           </p>
 
-          <button className="testdrive-btn">Book Test Drive</button>
+           <button className="testdrive-btn" onClick={() => setShowPopup(true)}>Book Test Drive</button>
+
+      <FormPopup
+        isOpen={showPopup}
+        onClose={() => setShowPopup(false)}
+      />
         </div>
 
         {/* RIGHT MAP */}

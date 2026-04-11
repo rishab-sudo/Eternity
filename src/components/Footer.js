@@ -42,6 +42,7 @@ const Footer = () => {
 
                 <ul className="footer-links">
                   <li><a href="/home">Home</a></li>
+                     <li><a href="/Mpv">VF MPV 7</a></li>
                   <li><a href="/Vf6">VF6</a></li>
                   <li><a href="/Vf7">VF7</a></li>
                   <li><a href="/contact">Contact Us</a></li>
@@ -57,9 +58,10 @@ const Footer = () => {
                 <h5 className="footer-heading">Address</h5>
 
                 <p className="footer-address">
-                  123 Industrial Area,<br/>
-                  Sector 10, Delhi, India<br/>
-                  Phone: +91 9876543210<br/>
+               Anaura Kala, NH 24, Ayodhya - Lucknow Rd, <br/>
+               Near Indira Canal, Faizabad,<br/>
+                Lucknow, Uttar Pradesh 227105 <br/> <br/>
+                  Phone: +91 987654***<br/>
                   Email: info@example.com
                 </p>
 

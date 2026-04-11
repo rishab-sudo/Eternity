@@ -12,7 +12,7 @@ const OverView = ({ title, data }) => {
   return (
     <Container fluid className="spec-section">
 
-      <h2 className=" overview-heading mb-5">{title}</h2>
+      <h2 className=" overview-heading mb-2">{title}</h2>
 
       <Swiper
         modules={[Navigation, Autoplay]}
