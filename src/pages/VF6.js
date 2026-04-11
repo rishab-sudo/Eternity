@@ -92,15 +92,15 @@ const VF6 = () => {
         <ProductPageBanner
           images={[
             {
-              src: require("../assets/banner/vf7-banner1.png"),
+              src: require("../assets/banner/vf6-banner1.png"),
               alt: "Banner 1",
             },
             {
-              src: require("../assets/banner/vf7-banner2.png"),
+               src: require("../assets/banner/vf6-banner1.png"),
               alt: "Banner 2",
             },
             {
-              src: require("../assets/banner/vf7-banner3.png"),
+                 src: require("../assets/banner/vf6-banner1.png"),
               alt: "Banner 3",
             },
           ]}
