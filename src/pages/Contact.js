@@ -112,16 +112,17 @@ const ContactUs = () => {
             {/* MAP */}
             <Col lg={7} md={12}>
               <div className="contact-us-map">
-                <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3511.263998718808!2d79.51399507549057!3d28.3508670758197!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjjCsDIxJzAzLjEiTiA3OcKwMzAnNTkuNyJF!5e0!3m2!1sen!2sin!4v1772103086533!5m2!1sen!2sin"
-                  width="100%"
-                  height="450"
-                  style={{ border: 0 }}
-                  allowFullScreen
-                  loading="lazy"
-                  referrerPolicy="no-referrer-when-downgrade"
-                  title="Google Map"
-                ></iframe>
+
+              <iframe
+  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3749.9247834384882!2d81.08340243243329!3d26.89579357711344!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39995fed9bb8e997%3A0x38f7bab851d63829!2sVinfast%20Lucknow!5e0!3m2!1sen!2sin!4v1775909630856!5m2!1sen!2sin"
+  width="100%"
+  height="450"
+  style={{ border: 0 }}
+  allowFullScreen
+  loading="lazy"
+  referrerPolicy="no-referrer-when-downgrade"
+  title="Google Map"
+></iframe>
               </div>
             </Col>
           </Row>
