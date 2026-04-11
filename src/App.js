@@ -14,21 +14,24 @@ import Footer from "./components/Footer";
 import "./App.css";
 
 function App() {
-  const [loading, setLoading] = useState(false);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     const hasVisited = sessionStorage.getItem("preloaderShown");
 
-    if (!hasVisited) {
-      setLoading(true);
-
-      const timer = setTimeout(() => {
-        setLoading(false);
-        sessionStorage.setItem("preloaderShown", "true");
-      }, 3000);
-
-      return () => clearTimeout(timer);
+    // if already visited in same tab session → no preloader
+    if (hasVisited) {
+      setLoading(false);
+      return;
     }
+
+    // force exact 8 sec loader
+    const timer = setTimeout(() => {
+      setLoading(false);
+      sessionStorage.setItem("preloaderShown", "true");
+    }, 5000);
+
+    return () => clearTimeout(timer);
   }, []);
 
   return (
