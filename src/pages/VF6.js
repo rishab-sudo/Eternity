@@ -49,11 +49,11 @@ const overviewData = [
     title: "Panoramic Sunroof",
     desc: "Enjoy an open, airy cabin with natural light and a luxurious driving feel.",
   },
-  {
-    img: require("../assets/products/vinfast_vf7-03.jpg"),
-    title: "Adjustable Comfort",
-    desc: "Smart seat height adjustment with ergonomic support for a personalized drive.",
-  },
+{
+  img: require("../assets/products/vinfast_vf7-03.jpg"),
+  title: "Eco-Friendly Drive",
+  desc: "Experience clean electric mobility with zero emissions, silent performance, and a greener future.",
+},
   {
     img: require("../assets/products/vinfast_vf7-04.jpg"),
     title: "Strong Body Build",
@@ -74,15 +74,15 @@ const overviewData = [
     title: "360° Camera View",
     desc: "Advanced surround-view camera system for safer parking and easier maneuvering.",
   },
-  {
-    img: require("../assets/products/vinfast_vf7-08.jpg"),
-    title: "Smart ORVMs",
-    desc: "Stylish side mirrors with enhanced visibility, safety, and modern convenience.",
-  },
+{
+  img: require("../assets/products/vinfast_vf7-08.jpg"),
+  title: "Signature LED Tail Lights",
+  desc: "Sleek full-width rear LED tail lights add style, visibility, and a bold road presence.",
+},
   {
     img: require("../assets/products/vinfast_vf7-09.jpg"),
-    title: "Premium Cabin Experience",
-    desc: "A spacious interior crafted for comfort, luxury, and every journey.",
+    title: "Smart ORVMs",
+    desc: "Stylish side mirrors with enhanced visibility, safety, and modern convenience.",
   },
 ];
   return (
