@@ -8,7 +8,7 @@ const variants = {
   earth: {
     name: "VF6 Earth",
     price: "₹ 17,29,000",
-    image: require("../assets/specification/spec-vf6.png"),
+    image: require("../assets/specification/spec-vf66.png"),
 
     specs: {
 
