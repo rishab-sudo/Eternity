@@ -13,7 +13,7 @@ const All5 = () => {
       {/* Image Section */}
       <div className="all5-image-wrapper">
         <img
-          src={require("../assets/Eternity-all 5.png")} // change image if needed
+          src={require("../assets/all5.png")} // change image if needed
           alt="project"
           className="all5-image"
         />
