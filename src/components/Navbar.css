@@ -132,14 +132,16 @@
 }
 
 /* ---------------- SIDEBAR ---------------- */
-
+.navbar-menu{
+  color: #f5f5f5;
+}
 .sidebar {
   position: fixed;
   left: -260px;
   top: 0;
   width: 260px;
   height: 100%;
-  background: white;
+  background: #000;
   padding: 30px;
   transition: 0.4s;
   z-index: 1200;
@@ -150,6 +152,11 @@
 }
 
 .sidebar-logo {
+  width: 150px;
+  margin-bottom: 30px;
+}
+.sidebar-logo img {
+  width: 150px;
   margin-bottom: 30px;
 }
 
@@ -173,18 +180,56 @@
   display: block;
   margin: 10px 0;
   text-decoration: none;
-  color: black;
+  color: #fbfbfb;
   font-size: 14px;
 }
 
 .sidebar-submenu.show {
   display: block;
 }
+/* DEFAULT NAV LINKS (TOP NAVBAR) */
 
+
+/* SIDEBAR LINKS FIX */
+.sidebar .drop_links {
+  color: #FFF;   
+  font-size: 16px;
+  font-weight: 500;
+}
+/* DROPDOWN CLICKABLE */
+.sidebar-dropdown .drop_links {
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+/* SUBMENU ANIMATION */
+.sidebar-submenu {
+  display: none;
+  padding-left: 15px;
+  transition: all 0.3s ease;
+}
+
+.sidebar-submenu a {
+  display: block;
+  margin: 12px 0;
+  text-decoration: none;
+  color: #fbfbfb;
+  font-size: 14px;
+}
+
+/* SHOW */
+.sidebar-submenu.show {
+  display: block;
+}
 /* ---------------- MOBILE ---------------- */
 
 @media (max-width: 992px) {
-
+.navbar-logo{
+width: 150px;
+}
   .navbar-links {
     display: none;
   }

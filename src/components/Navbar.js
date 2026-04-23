@@ -3,11 +3,13 @@ import { Container } from "react-bootstrap";
 import FormPopup from "./FormPopup";
 import "./Navbar.css";
 
-
 const Navbar = () => {
   const [showPopup, setShowPopup] = useState(false);
   const [showNav, setShowNav] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
+
+  // 👇 NEW STATE FOR DROPDOWN
+  const [productOpen, setProductOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -44,12 +46,12 @@ const Navbar = () => {
             <a className="links" href="/vf6">VF 6</a>
             <a className="links" href="/contact">Contact</a>
 
-           <button className="enquiry-btn" onClick={() => setShowPopup(true)}>Enquiry</button>
+            <button className="enquiry-btn" onClick={() => setShowPopup(true)}>Enquiry</button>
 
-      <FormPopup
-        isOpen={showPopup}
-        onClose={() => setShowPopup(false)}
-      />
+            <FormPopup
+              isOpen={showPopup}
+              onClose={() => setShowPopup(false)}
+            />
           </div>
 
           <div className="navbar-menu" onClick={toggleMenu}>
@@ -63,16 +65,33 @@ const Navbar = () => {
       <div className={`sidebar ${menuOpen ? "open" : ""}`}>
 
         <div className="sidebar-logo">
-          <img src="/logo.png" alt="logo" height="40" />
+          <img src={require("../assets/eternity-logo-white.png")} />
         </div>
 
         <a className="links" href="/" onClick={() => setMenuOpen(false)}>Home</a>
-                <a className="links" href="/mpv" onClick={() => setMenuOpen(false)}>MPV7</a>
-        <a className="links" href="/vf7" onClick={() => setMenuOpen(false)}>VF 7</a>
-        <a className="links" href="/vf6" onClick={() => setMenuOpen(false)}>VF 6</a>
-        <a className="links" href="/contact" onClick={() => setMenuOpen(false)}>Contact</a>
-        <a className="links" href="/enquiry" onClick={() => setMenuOpen(false)}>Enquiry</a>
 
+        {/* ✅ PRODUCTS DROPDOWN (NEW) */}
+        <div className="sidebar-dropdown">
+          <div
+            className="drop_links"
+            onClick={() => setProductOpen(!productOpen)}
+          >
+            Products {productOpen ? "▲" : "▼"}
+          </div>
+
+          <div className={`sidebar-submenu ${productOpen ? "show" : ""}`}>
+            <a href="/mpv" onClick={() => setMenuOpen(false)}>MPV7</a>
+            <a href="/vf7" onClick={() => setMenuOpen(false)}>VF 7</a>
+            <a href="/vf6" onClick={() => setMenuOpen(false)}>VF 6</a>
+          </div>
+        </div>
+
+        <a className="links" href="/contact" onClick={() => setMenuOpen(false)}>Contact</a>
+        <button className="enquiry-btn" onClick={() => setShowPopup(true)}>Enquiry</button>
+ <FormPopup
+              isOpen={showPopup}
+              onClose={() => setShowPopup(false)}
+            />
       </div>
     </>
   );
