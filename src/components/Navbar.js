@@ -65,7 +65,7 @@ const Navbar = () => {
       <div className={`sidebar ${menuOpen ? "open" : ""}`}>
 
         <div className="sidebar-logo">
-          <img src={require("../assets/eternity-logo-white.png")} />
+          <img src={require("../assets/eternity-logo-white.png")} alt="sidebar-logo"/>
         </div>
 
         <a className="links" href="/" onClick={() => setMenuOpen(false)}>Home</a>

@@ -92,7 +92,7 @@ const Footer = () => {
                   </a>
                 </p>
 
-                <button className="brochure-btn">Download Brochure</button>
+                {/* <button className="brochure-btn">Download Brochure</button> */}
               </div>
             </Col>
           </Row>
