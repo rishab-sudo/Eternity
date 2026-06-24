@@ -111,11 +111,7 @@ const overviewData = [
           reverse
           title="VF 6"
           tagline="A compact and stylish electric SUV"
-<<<<<<< HEAD
           price="₹ 17,29,000"
-=======
-          price="₹ 18,50,000"
->>>>>>> d735956b3b897c01be4f4aea86bd0b88efc472f9
           battery="59.6kWh"
           wheel="45cm"
           adas="Level 2"
